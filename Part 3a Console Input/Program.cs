@@ -73,9 +73,23 @@ namespace Part_3a_Console_Input
         }
         static void Hypotenuse()
         {
+            string firstSide;
+            string secondSide;
+            double side1;
+            double side2;
+            double hypotenuse;
 
+            Console.WriteLine("Please enter the lengths of two sides of a right triangle to get the hypotenuse, the first length is:");
+            firstSide = Console.ReadLine();
+            side1 = Convert.ToDouble(firstSide);
 
+            Console.WriteLine("The second length is:");
+            secondSide = Console.ReadLine();
+            side2 = Convert.ToDouble(secondSide);
+            
+            hypotenuse = Math.Sqrt(Math.Pow(side1, 2) + Math.Pow(side2, 2));
 
+            Console.WriteLine($"The hypotenuse is: {Math.Round(hypotenuse,2)}");
         }
         static void Main(string[] args)
         {
