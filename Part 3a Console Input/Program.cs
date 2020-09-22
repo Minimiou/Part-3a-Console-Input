@@ -93,9 +93,9 @@ namespace Part_3a_Console_Input
         }
         static void Main(string[] args)
         {
-            //Greetings();
-            //Adder();
-            //Distance();
+            Greetings();
+            Adder();
+            Distance();
             Hypotenuse();
         }
     }
