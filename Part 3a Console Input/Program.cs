@@ -7,7 +7,7 @@ namespace Part_3a_Console_Input
         static void Greetings()
         {
             string name;
-            string age;
+            int age;
             string year;
             DateTime currentYear = DateTime.Today;
 
@@ -15,12 +15,10 @@ namespace Part_3a_Console_Input
             name = Console.ReadLine();
 
             Console.WriteLine("Nice! Now how old are you?");
-            age = Console.ReadLine();
+            age = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("And what year were you born?");
-            year = Console.ReadLine();
 
-            Console.WriteLine($"Ok {name}, you were born in {year}, we are currently in {currentYear.ToString("yyyy")} so you are {age} years old. Nice to meet you!");
+            Console.WriteLine($"Ok {name}, you were born in {currentYear.Year - age}, we are currently in {currentYear.ToString("yyyy")} so you are {age} years old. Nice to meet you!");
         }
         static void Adder()
         {
